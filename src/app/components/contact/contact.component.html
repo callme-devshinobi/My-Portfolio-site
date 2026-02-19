@@ -1,0 +1,60 @@
+<section id="contact">
+  <div class="section-header-deco">
+    <div class="line-long"></div>
+    <div class="diamond"></div>
+    <div class="line-long right"></div>
+  </div>
+  <div class="section-label">
+    <h2 class="section-title">Get In Touch</h2>
+  </div>
+  <p class="section-sub">Let's Work Together!</p>
+
+  <div class="contact-inner">
+
+    <!-- Contact info -->
+    <div>
+      <div class="contact-info-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </div>
+        <div class="contact-info-text">
+          <strong>Email</strong>
+          <span>devshinobi@yahoo.com</span>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+        </div>
+        <div class="contact-info-text">
+          <strong>Location</strong>
+          <span>LAGOS, NIGERIA</span>
+        </div>
+      </div>
+
+      <div class="contact-social-title">FOLLOW ME</div>
+      <div class="contact-socials">
+        <a class="social-btn" href="https://github.com/callme-devshinobi" target="_blank">GH</a>
+        <a class="social-btn" href="https://www.frontendmentor.io/profile/callme-devshinobi" target="_blank">FM</a> 
+          <a class="social-btn" href="www.linkedin.com/in/dennis-onwuegbu-9719b4255" target="_blank">LI</a>
+      </div>
+    </div>
+
+    <!-- Contact form -->
+    <form class="contact-form" (ngSubmit)="submitForm()">
+      <div class="form-field">
+        <input type="text" placeholder="Your Name" />
+      </div>
+      <div class="form-field">
+        <input type="email" placeholder="Your Email" />
+      </div>
+      <div class="form-field">
+        <textarea placeholder="Your Message"></textarea>
+      </div>
+      <button type="submit" class="btn-send">
+        Send <span class="btn-send-icon">&#10148;</span>
+      </button>
+    </form>
+
+  </div>
+</section>

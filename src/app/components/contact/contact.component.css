@@ -1,0 +1,5 @@
+.social-btn {
+    display: inline-flex;
+    text-decoration: none;   /* removes underline */
+    cursor: pointer;
+  }

@@ -1,0 +1,22 @@
+<section id="skills" style="position:relative;">
+  <div class="skills-section-deco"></div>
+  <div class="section-header-deco">
+    <div class="line-long"></div>
+    <div class="diamond"></div>
+    <div class="line-long right"></div> 
+  </div>
+  <div class="section-label">
+    <h2 class="section-title">My Skills</h2>
+  </div>
+  <p class="section-sub">Expertise in</p>
+
+  <div class="skills-grid">
+    <div class="skill-pill" *ngFor="let skill of skills">
+      <img class="skillimg" [src]="skill.icon">
+      <span class="skilltext">{{skill.name}}</span>
+    </div>
+    
+  </div>
+</section>
+
+<div class="sep"></div>

@@ -1,0 +1,32 @@
+<section id="projects">
+  <div class="section-header-deco">
+    <div class="line-long"></div>
+    <div class="diamond"></div>
+    <div class="line-long right"></div>
+  </div>
+  <div class="section-label">
+    <h2 class="section-title">Latest Projects</h2>
+  </div>
+  <p class="section-sub">A showcase of my recent work</p>
+
+  <div class="projects-grid">
+    <swiper-container
+  [slidesPerView]="1"
+  [spaceBetween]="20"
+  [breakpoints]="breakpoints"
+  navigation="true">
+    <swiper-slide class="project-card" *ngFor="let project of projects">
+      <div class="project-thumb thumb-dashboard">
+        <img [src]="project.image">
+      </div>
+      <div class="project-body">
+        <h3 class="project-title">{{project.title}}</h3>
+        <p class="project-desc">{{project.description}}</p>
+        <a class="btn-view" [href]="project.demo" target="_blank">View Project &#8250;</a>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+  </div>
+</section>
+
+<div class="sep"></div>
