@@ -10,6 +10,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -24,7 +26,8 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

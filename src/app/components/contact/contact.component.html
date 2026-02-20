@@ -34,22 +34,23 @@
 
       <div class="contact-social-title">FOLLOW ME</div>
       <div class="contact-socials">
-        <a class="social-btn" href="https://github.com/callme-devshinobi" target="_blank">GH</a>
-        <a class="social-btn" href="https://www.frontendmentor.io/profile/callme-devshinobi" target="_blank">FM</a> 
-          <a class="social-btn" href="www.linkedin.com/in/dennis-onwuegbu-9719b4255" target="_blank">LI</a>
+        <a class="social-btn" href="https://github.com/callme-devshinobi" target="_blank"><img src="/assets/icons/github.png" alt="github"></a>
+        <a class="social-btn" href="www.linkedin.com/in/dennis-onwuegbu-9719b4255" target="_blank"><img src="/assets/icons/linkedin.png" alt="linkedin"></a>
+        <a class="social-btn" href="https://www.instagram.com/dennis.c.martins?igsh=ZzhycnFwaWo2c24x&utm_source=qr" target="_blank"><img src="/assets/icons/ig.png" alt="instagram"></a>
+        <a class="social-btn" href="https://www.frontendmentor.io/profile/callme-devshinobi" target="_blank"><img src="/assets/icons/frontend.png" alt="frontend"></a> 
       </div>
     </div>
 
     <!-- Contact form -->
-    <form class="contact-form" (ngSubmit)="submitForm()">
+    <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="submitForm()">
       <div class="form-field">
-        <input type="text" placeholder="Your Name" />
+        <input type="text" placeholder="Your Name" formControlName="name" />
       </div>
       <div class="form-field">
-        <input type="email" placeholder="Your Email" />
+        <input type="email" placeholder="Your Email" formControlName="email" />
       </div>
       <div class="form-field">
-        <textarea placeholder="Your Message"></textarea>
+        <textarea placeholder="Your Message" formControlName="message"></textarea>
       </div>
       <button type="submit" class="btn-send">
         Send <span class="btn-send-icon">&#10148;</span>
